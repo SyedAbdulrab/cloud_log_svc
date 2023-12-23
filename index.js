@@ -59,10 +59,7 @@ app.get('/logs', async (req, res) => {
 // Route to get logs for a specific user
 app.get('/logs/:userId', async (req, res) => {
     try {
-        const userId = req.params.userId;
-
-        // Check if the user exists
-       
+        const userId = req.params.userId;       
 
         // Get logs for the specified user
         const logs = await LogModel.find({ userId: userId });
