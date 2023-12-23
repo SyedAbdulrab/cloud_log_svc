@@ -2,9 +2,11 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const LogModel = require("./models/Log");
 const { default: mongoose } = require('mongoose');
+const cors = require('cors');
 
 const app = express();
-const port = 3000;
+app.use(cors());
+const port = 6000;
 
 // Middleware to parse JSON in requests
 app.use(express.json());
