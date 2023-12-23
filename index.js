@@ -6,7 +6,7 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors());
-const port = 6000;
+const port = 3004;
 
 // Middleware to parse JSON in requests
 app.use(express.json());
